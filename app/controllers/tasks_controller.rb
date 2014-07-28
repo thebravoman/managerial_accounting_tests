@@ -1,7 +1,7 @@
 class TasksController < ApplicationController
 	def index
 		@exams=[]
-		[	"Rosi Deshova",
+		#~ [	"Rosi Deshova",
 			#~ "Yavor",
 			#~ "Dinko",
 			#~ "Ivan",
@@ -20,7 +20,7 @@ class TasksController < ApplicationController
 			#~ "Rafi",
 			#~ "Ilyan",
 			#~ "Niki",
-			"Kiril"].sort
-		.each { |name| @exams<<Exam.new(name)}
+			#~ "Kiril"].sort
+		0.upto(5).each { |number| @exams<<Exam.new(number)}
 	end	
 end
